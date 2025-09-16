@@ -1,0 +1,13 @@
+<main class="content">
+  @if (safeLink) {
+    <div class="embed-wrap">
+      <iframe class="embed-frame" [src]="safeLink" title="Vista de documento"></iframe>
+    </div>
+  } @else {
+    <div class="container-fluid py-3">
+      <h1 class="h5 fw-semibold mb-2">Contenido Principal</h1>
+      <p class="text-secondary mb-4">Selecciona un documento del menú.</p>
+    </div>
+  }
+</main>
+
