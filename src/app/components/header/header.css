@@ -1,82 +1,59 @@
 :root {
-	--brand-600: #5b6cff;
-	--brand-700: #4959e9;
-	--ink-900: #0f172a;
-	--ink-600: #334155;
-	--bg-canvas: #f7f8fc;
-	--bg-card: #ffffff;
-	--line-200: #e5e7eb;
-	--accent-600: #10b981;
-	--warn-600: #f59e0b;
-	--danger-600: #ef4444;
-	--radius-xl: 16px;
-	--radius-lg: 12px;
-	--radius-md: 10px;
-	--transition-duration: 0.3s;
-}
-
-* {
-	font-family: Inter, Roboto, "Helvetica Neue", Arial, sans-serif;
-	box-sizing: border-box;
+	--header-bg: #4a90e2; /* Fondo azul atractivo */
+	--header-bg-hover: #357abd; /* Fondo al pasar el mouse */
+	--text-primary: #ffffff; /* Color blanco para el texto */
+	--text-secondary: #d1e1f3; /* Color más suave para el subtítulo */
+	--border-radius: 12px; /* Bordes suaves */
+	--shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
 
 .app-header {
-	background: var(--bg-card);
-	border-bottom: 1px solid var(--line-200);
-	padding: 0.5rem 0;
+	background: var(--header-bg) !important; /* Usamos !important para forzar el color */
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	box-shadow: var(--shadow);
+	padding: 16px;
+	border-radius: var(--border-radius);
+	transition: background-color 0.3s ease;
 }
 
+.app-header:hover {
+	background-color: var(--header-bg-hover) !important;
+}
 .brand-avatar {
-	width: 45px;
-	height: 45px;
-	border-radius: var(--radius-md);
-	background: var(--ink-900);
-	color: #fff;
+	width: 50px;
+	height: 50px;
+	border-radius: var(--border-radius);
+	background: var(--text-primary);
+	color: var(--text-primary);
 	display: grid;
 	place-items: center;
 	font-weight: 700;
-	transition: background-color var(--transition-duration);
+	font-size: 1.25rem; /* Aumentamos un poco el tamaño de la letra */
+	transition: transform 0.3s ease-in-out;
 }
 
 .brand-avatar:hover {
-	background-color: var(--brand-600);
+	transform: scale(1.1); /* Efecto de hover en el avatar */
 }
 
 .brand-title {
 	font-weight: 600;
-	color: var(--ink-900);
-	font-size: 1.2rem;
-	transition: color var(--transition-duration);
+	color: var(--text-primary);
+	font-size: 1.5rem;
+	letter-spacing: 1px; /* Un poco de espaciado entre letras */
+	transition: color 0.3s ease;
 }
 
 .brand-title:hover {
-	color: var(--brand-700);
+	color: #ffd700; /* Cambio de color en el hover */
 }
 
 .brand-subtitle {
-	color: var(--ink-600);
-	font-size: 0.875rem;
+	color: var(--text-secondary);
+	font-size: 1rem;
+	transition: color 0.3s ease;
 }
 
-.container-fluid {
-	display: flex;
-	align-items: center;
-	gap: 15px;
-}
-
-.d-flex {
-	display: flex;
-}
-
-.flex-column {
-	flex-direction: column;
-}
-
-.py-3 {
-	padding-top: 1rem;
-	padding-bottom: 1rem;
-}
-
-.gap-3 {
-	gap: 1rem;
+.brand-subtitle:hover {
+	color: #a1c4e8; /* Cambio de color en el hover */
 }

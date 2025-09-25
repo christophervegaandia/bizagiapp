@@ -23,13 +23,13 @@ export const CATEGORIES: Category[] = [
 								id: "fee",
 								name: "Fee",
 								icon: "bi-file-earmark",
-								link: "/assets/projects/html/drawio/Code/Database/Fee.html",
+								link: "/assets/projects/html/drawio/Modelo C4/Code/Database/Fee.html",
 							},
 							{
 								id: "landingpage",
 								name: "LandingPage",
 								icon: "bi-file-earmark",
-								link: "/assets/projects/html/drawio/Code/Database/LandingPage.html",
+								link: "/assets/projects/html/drawio/Modelo C4/Code/Database/LandingPage.html",
 							},
 						],
 					},
@@ -121,11 +121,16 @@ export const CATEGORIES: Category[] = [
 			},
 		],
 	},
-
 	{
 		id: "api_rest",
 		name: "Diseño de API REST",
 		icon: "bi bi-file",
 		link: "/assets/projects/html/markdown/Diseño de apis.html",
+	},
+	{
+		id: "bizagi",
+		name: "Bizagi Modeler",
+		icon: "bi bi-file",
+		link: "/assets/projects/html/bizzagi/modelo1/index.html",
 	},
 ];
